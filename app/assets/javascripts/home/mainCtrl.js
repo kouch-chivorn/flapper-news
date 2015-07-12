@@ -7,20 +7,20 @@ angular.module('flapperNews')
         if (!$scope.title) {
           return;
         }
-        $scope.posts.push({
+        posts.create({
           title: $scope.title,
           view: 0,
           like: 0,
           link: $scope.link,
-          comments: [{
-            author: "Rattanak",
-            body: "Love, Love, Love!",
-            like: 0
-          }, {
-            author: "Norin",
-            body: "I love animation!",
-            like: 0
-          }]
+          // comments: [{
+          //   author: "Rattanak",
+          //   body: "Love, Love, Love!",
+          //   like: 0
+          // }, {
+          //   author: "Norin",
+          //   body: "I love animation!",
+          //   like: 0
+          // }]
         });
         $scope.title = '';
         $scope.link = '';
